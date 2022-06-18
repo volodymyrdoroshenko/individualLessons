@@ -9,6 +9,11 @@ public class Wall extends Obstacle {
         this.height = (int) (Math.random() * 50);
     }
 
+    public Wall(String name, int height) {
+        this.name = name;
+        this.height = height;
+    }
+
     public String getName() {
         return name;
     }

@@ -5,9 +5,10 @@ public class Main {
     public static void main(String[] args) {
         Participant[] participants = getParticipants();
         Obstacle[] obstacles = getObstacles();
+        passingCheck(participants, obstacles);
+    }
 
-        //Для сохранения данных в массиве, можно создать его копию
-        //или записыать индексы выбывших участников, например, в HashSet
+    public static void passingCheck(Participant[] participants, Obstacle[] obstacles) {
         System.out.println();
         for (int i = 0; i < participants.length; i++) {
             for (Obstacle obstacle : obstacles) {
@@ -18,7 +19,6 @@ public class Main {
             }
             System.out.println();
         }
-
         System.out.print("Passed all obstacles: ");
         for (Participant participant : participants) {
             if (participant != null)
@@ -27,7 +27,7 @@ public class Main {
         System.out.println();
     }
 
-    static Participant[] getParticipants() {
+    public static Participant[] getParticipants() {
         Cat cat1 = new Cat("cat1");
         Cat cat2 = new Cat("cat2");
         Human human1 = new Human("human1");
@@ -37,7 +37,7 @@ public class Main {
         return new Participant[]{cat1, cat2, human1, human2, robot1, robot2};
     }
 
-    static Obstacle[] getObstacles() {
+    public static Obstacle[] getObstacles() {
         Wall wall1 = new Wall("wall1");
         Wall wall2 = new Wall("wall2");
         Track track1 = new Track("track1");

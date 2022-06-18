@@ -9,6 +9,11 @@ public class Track extends Obstacle {
         this.distance = (int) (Math.random() * 1500);
     }
 
+    public Track(String name, int distance) {
+        this.name = name;
+        this.distance = distance;
+    }
+
     public String getName() {
         return name;
     }

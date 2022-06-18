@@ -11,6 +11,12 @@ public class Cat extends Participant {
         this.run = (int) (Math.random() * 3000);
     }
 
+    public Cat(String name, int jump, int run) {
+        this.name = name;
+        this.jump = jump;
+        this.run = run;
+    }
+
     public String getName() {
         return name;
     }
