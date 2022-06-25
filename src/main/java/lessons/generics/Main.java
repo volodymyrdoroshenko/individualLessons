@@ -1,7 +1,7 @@
 package lessons.generics;
 
 public class Main {
-    public static void main(String[] args) throws RuntimeException {
+    public static void main(String[] args) {
         Apple apple = new Apple();
         Orange orange = new Orange();
 
