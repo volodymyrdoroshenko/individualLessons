@@ -1,20 +1,14 @@
-package lessons.OOP;
+package lessons.lesson1.OOP;
 
-public class Cat extends Participant {
+public class Robot extends Participant {
     String name;
     int jump;
     int run;
 
-    public Cat(String name) {
+    public Robot(String name) {
         this.name = name;
         this.jump = (int) (Math.random() * 100);
         this.run = (int) (Math.random() * 3000);
-    }
-
-    public Cat(String name, int jump, int run) {
-        this.name = name;
-        this.jump = jump;
-        this.run = run;
     }
 
     public String getName() {
@@ -32,11 +26,11 @@ public class Cat extends Participant {
 
     @Override
     public void running() {
-        System.out.println("Cat is running...");
+        System.out.println("Robot is running...");
     }
 
     @Override
     public void jumping() {
-        System.out.println("Cat is jumping...");
+        System.out.println("Robot is jumping...");
     }
 }

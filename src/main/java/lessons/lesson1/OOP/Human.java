@@ -1,4 +1,4 @@
-package lessons.OOP;
+package lessons.lesson1.OOP;
 
 public class Human extends Participant {
     String name;

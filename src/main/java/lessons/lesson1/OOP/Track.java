@@ -1,4 +1,4 @@
-package lessons.OOP;
+package lessons.lesson1.OOP;
 
 public class Track extends Obstacle {
     String name;
