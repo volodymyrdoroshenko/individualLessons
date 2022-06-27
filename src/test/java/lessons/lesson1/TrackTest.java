@@ -1,7 +1,5 @@
-package lessons.OOP;
+package lessons.lesson1;
 
-import lessons.lesson1.OOP.Cat;
-import lessons.lesson1.OOP.Track;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

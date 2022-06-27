@@ -1,4 +1,4 @@
-package lessons.exceptions;
+package lessons.lesson2.exceptions;
 
 public class Main {
     public static final int SIZE = 4;

@@ -1,4 +1,4 @@
-package lessons.lesson1.OOP;
+package lessons.lesson1;
 
 public class Robot extends Participant {
     String name;
