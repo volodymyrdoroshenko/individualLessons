@@ -1,4 +1,4 @@
-package lessons.generics;
+package lessons.lesson2.generics;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,8 +28,8 @@ public class Main {
             System.out.println("\nSome boxes are not equally by weight!\n");
         }
 
-        box1.merge(box1, box2);
-//        box1.merge(box1, box3); - compilation error, as expected
+        box1.merge(box2);
+//      box1.merge(box3); - compilation error, as expected
 
         System.out.println("Total weight of box1 (apples) after merging is: " + box1.getTotalWeight());
         System.out.println("Total weight of box2 (apples) after merging is: " + box2.getTotalWeight());

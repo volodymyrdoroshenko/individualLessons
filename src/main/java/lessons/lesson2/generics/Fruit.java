@@ -1,4 +1,4 @@
-package lessons.generics;
+package lessons.lesson2.generics;
 
 public abstract class Fruit {
     public abstract float getWeight();

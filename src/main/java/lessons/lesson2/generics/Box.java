@@ -1,4 +1,4 @@
-package lessons.generics;
+package lessons.lesson2.generics;
 
 import java.util.ArrayList;
 
@@ -33,8 +33,8 @@ public class Box<T extends Fruit> {
         } else throw new RuntimeException();
     }
 
-    public void merge(Box<T> box1, Box<T> box2) {
-        box1.list.addAll(box1.list.size(), box2.list);
-        box2.list.clear();
+    public void merge(Box<T> box) {
+        this.list.addAll(box.list);
+        box.list.clear();
     }
 }
