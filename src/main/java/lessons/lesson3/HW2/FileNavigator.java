@@ -3,7 +3,7 @@ package lessons.lesson3.HW2;
 import java.util.*;
 
 public class FileNavigator {
-    HashMap<String, ArrayList<FileData>> storage;
+    private HashMap<String, ArrayList<FileData>> storage;
 
     public FileNavigator() {
         this.storage = new HashMap<>();
